@@ -5,10 +5,13 @@
     --text-10: #ffffffc6;
     --green: #2af38f;
     --green-10: #2af38f9f;
-  }
+    --gold: #f1b600;
+    --silver: #9a9c9f;
+    --bronze: #ab825f;
+}
 
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -18,13 +21,12 @@ html, body {
 
 section {
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 255, 179, 0.1), rgba(0, 0, 0, 0.9)), url(../assets/back3.jpg) no-repeat center center fixed; 
+    background: linear-gradient(0deg, rgba(0, 255, 179, 0.1), rgba(0, 0, 0, 0.9)), url(../assets/back3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 .fat {
     font-weight: bold;
@@ -37,42 +39,54 @@ section {
 .height-1 {
     height: 10vh;
 }
+
 .height-2 {
     height: 20vh;
 }
+
 .height-3 {
     height: 30vh;
 }
+
 .height-4 {
     height: 40vh;
 }
+
 .height-5 {
     height: 50vh;
 }
+
 .height-6 {
     height: 60vh;
 }
+
 .height-7 {
     height: 70vh;
 }
+
 .height-8 {
     height: 80vh;
 }
+
 .height-9 {
     height: 90vh;
 }
+
 .height-10 {
     height: 100vh;
 }
 
+
 /*--------------- navigazione --------------- */
 
 .navbar-dark .navbar-brand {
-    color:  var(--text);
+    color: var(--text);
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: var(--text);
 }
+
 
 /*--------------- landing --------------- */
 
@@ -87,21 +101,20 @@ section {
     color: var(--background);
 }
 
-.landing-caption p{
+.landing-caption p {
     font-size: 34px;
     color: var(--text);
 }
 
-.lets-chat span{
+.lets-chat span {
     text-decoration: underline;
     font-size: 24px;
     color: var(--green);
 }
 
-.lets-chat span:hover{
+.lets-chat span:hover {
     color: var(--green-10);
 }
-
 
 .badge-value {
     font-size: 34px;
@@ -111,6 +124,25 @@ section {
 .badge-description {
     font-size: 14px;
     color: var(--text);
+}
+
+.badge-count {
+    font-size: 14px;
+    color: var(--text);
+    padding-right: 4pt;
+    padding-left: 8pt;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.silver {
+    color: var(--silver);
+}
+
+.bronze {
+    color: var(--bronze);
 }
 
 .brand {
@@ -129,11 +161,11 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-    .landing-caption p{
-        font-size: 28px;
+    .landing-caption p {
+        font-size: 26px;
     }
     .badge-value {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -146,6 +178,21 @@ section {
     }
     .fs {
         display: none;
+    }
+    .landing-caption p {
+        font-size: 24px;
+    }
+    .badge-value {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .landing-caption p {
+        font-size: 20px;
+    }
+    .badge-value {
+        font-size: 20px;
     }
 }
 
